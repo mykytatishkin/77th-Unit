@@ -12,13 +12,28 @@ class CfgPatches
 			"77th_Trooper_Uniform",
 			"77th_Specialist_Uniform",
 			"77th_Copral_Uniform",
-			"77th_Sergant_Uniform"
+			"77th_Sergant_Uniform",
+			"77th_Sergant_Veteran_Uniform",
+			"77th_Copral_Veteran_Uniform",
+			"77th_Specialist_Veteran_Uniform",
+			"77th_Trooper_Veteran_Uniform"
 			
 		};
 		weapons[]=
 		{
 			"77th_CT2_Helmet",
-			
+			"77th_CT3_Helmet",
+			"77th_CT4_Helmet",
+			"77th_CT5_Helmet",
+			"77th_Hornet_Helmet",
+			"77th_Trooper_Helmet",
+			"77th_Specialist_Helmet",
+			"77th_Copral_Helmet",
+			"77th_Sergant_Helmet",
+			"77th_Sergant_Veteran_Helmet",
+			"77th_Copral_Veteran_Helmet",
+			"77th_Specialist_Veteran_Helmet",
+			"77th_Trooper_Veteran_Helmet"
 		};
 	};
 };
@@ -87,251 +102,6 @@ class CfgWeapons
 	class lsd_gar_airborne_new;
 	class ls_gar_barc_helmet;
 	
-	class 77th_CT2_Helmet: ls_gar_phase2_helmet
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] CT-2 Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\CT2_Helmet_P2",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-		};
-	};
-
-	class 77th_CT2_Armor: SWLB_clone_uniform
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName=" [77th] CT-2 Armor";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="77th_CT2_Uniform";
-			containerClass="Supply100";
-			mass=40;
-			scope=2;
-		};
-	};
-
-	class 77th_CT3_Helmet: ls_gar_phase2_helmet
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] CT-3 Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\CT3_Helmet_P2",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-		};
-	};
-
-	class 77th_CT3_Armor: SWLB_clone_uniform
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] CT-3 Armor";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="77th_CT3_Uniform";
-			containerClass="Supply100";
-			mass=40;
-			scope=2;
-		};
-	};
-
-	class 77th_CT4_Helmet: ls_gar_phase2_helmet
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] CT-4 Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\CT4_Helmet_P2",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-		};
-	};
-
-	class 77th_CT4_Armor: SWLB_clone_uniform
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] CT-4 Armor";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="77th_CT4_Uniform";
-			containerClass="Supply100";
-			mass=40;
-			scope=2;
-		};
-	};
-
-	class 77th_CT5_Helmet: ls_gar_phase2_helmet
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] CT-5 Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\CT5_Helmet_P2",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-		};
-	};
-
-	class 77th_CT5_Armor: SWLB_clone_uniform
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] CT-5 Armor";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="77th_CT5_Uniform";
-			containerClass="Supply100";
-			mass=40;
-			scope=2;
-		};
-	};
-
-	class 77th_Hornet_Helmet: ls_gar_phase2_helmet
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Hornet Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\Hornet_Helmet_P2",
-			"AUX77_PBO\data\Hornet_Visor.paa"
-		};
-	};
-
-	class 77th_Hornet_Armor: SWLB_clone_uniform
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Hornet Armor";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="77th_Hornet_Uniform";
-			containerClass="Supply100";
-			mass=40;
-			scope=2;
-		};
-	};
-
-	class 77th_Trooper_Helmet: ls_gar_phase2_helmet
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Trooper Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\Trooper_Helmet_P2",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-		};
-	};
-
-	class 77th_Trooper_Armor: SWLB_clone_uniform
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Trooper Armor";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="77th_Trooper_Uniform";
-			containerClass="Supply100";
-			mass=40;
-			scope=2;
-		};
-	};
-	
-	class 77th_Specialist_Helmet: ls_gar_phase2_helmet
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Specialist Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\Specialist_Helmet_P2",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-		};
-	};
-
-	class 77th_Specialist_Armor: SWLB_clone_uniform
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Specialist Armor";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="77th_Specialist_Uniform";
-			containerClass="Supply100";
-			mass=40;
-			scope=2;
-		};
-	};
-
-	class 77th_Copral_Helmet: ls_gar_phase2_helmet
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Copral Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\Copral_Helmet_P2",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-		};
-	};
-
-	class 77th_Copral_Armor: SWLB_clone_uniform
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Copral Armor";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="77th_Copral_Uniform";
-			containerClass="Supply100";
-			mass=40;
-			scope=2;
-		};
-	};
-
-	class 77th_Sergant_Helmet: ls_gar_phase2_helmet
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Sergant Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\Sergant_Helmet_P2",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-		};
-	};
-
 	class 77th_Sergant_Armor: SWLB_clone_uniform
 	{
 		author="Teasera";
@@ -357,7 +127,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Sergant_Veteran_Helmet_P2",
-			"AUX77_PBO\data\Veteran_Visor.paa""
+			"AUX77_PBO\data\Veteran_Visor.paa"
 		};
 	};
 
@@ -371,6 +141,63 @@ class CfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="77th_Sergant_Veteran_Uniform";
+			containerClass="Supply100";
+			mass=40;
+			scope=2;
+		};
+	};
+
+	class 77th_Copral_Veteran_Helmet: ls_gar_phase2_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Copral Veteran Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Copral_Veteran_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa"
+		};
+	};
+
+	class 77th_Specialist_Veteran_Armor: SWLB_clone_uniform
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Specialist Veteran Armor";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="77th_Specialist_Veteran_Uniform";
+			containerClass="Supply100";
+			mass=40;
+			scope=2;
+		};
+	};
+	class 77th_Trooper_Veteran_Helmet: ls_gar_phase2_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Trooper Veteran Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Trooper_Veteran_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa"
+		};
+	};
+
+	class 77th_Trooper_Veteran_Armor: SWLB_clone_uniform
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Trooper Veteran Armor";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="77th_Trooper_Veteran_Uniform";
 			containerClass="Supply100";
 			mass=40;
 			scope=2;
@@ -424,150 +251,6 @@ class CfgVehicles
 	class SWLB_clone_arc_backpack;
 	class SWLB_mando_base_assault;
 	
-	class 77th_CT2_Uniform: SWLB_clone_base_P2
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] CT-2";
-		
-		uniformClass="77th_CT2_Uniform";
-		linkedItems[]={};
-		respawnLinkedItems[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\CT2_UpperBody",
-			"AUX77_PBO\data\CT2_LowerBody",
-		};
-	};		
-	class 77th_CT3_Uniform: SWLB_clone_base_P2
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] CT-3";
-		
-		uniformClass="77th_CT3_Uniform";
-		linkedItems[]={};
-		respawnLinkedItems[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\CT3_UpperBody",
-			"AUX77_PBO\data\CT3_LowerBody",
-		};
-	};		
-	class 77th_CT4_Uniform: SWLB_clone_base_P2
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] CT-4";
-		
-		uniformClass="77th_CT4_Uniform";
-		linkedItems[]={};
-		respawnLinkedItems[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\CT4_UpperBody",
-			"AUX77_PBO\data\CT4_LowerBody",
-		};
-	};	
-	class 77th_CT5_Uniform: SWLB_clone_base_P2
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] CT-5";
-		
-		uniformClass="77th_CT5_Uniform";
-		linkedItems[]={};
-		respawnLinkedItems[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\CT5_UpperBody",
-			"AUX77_PBO\data\CT5_LowerBody",
-		};
-	};
-	class 77th_Hornet_Uniform: SWLB_clone_base_P2
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Hornet";
-		
-		uniformClass="77th_Hornet_Uniform";
-		linkedItems[]={};
-		respawnLinkedItems[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\Hornet_UpperBody",
-			"AUX77_PBO\data\Hornet_LowerBody",
-		};
-	};
-	class 77th_Trooper_Uniform: SWLB_clone_base_P2
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Trooper";
-		
-		uniformClass="77th_Trooper_Uniform";
-		linkedItems[]={};
-		respawnLinkedItems[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\Trooper_UpperBody",
-			"AUX77_PBO\data\Trooper_LowerBody",
-		};
-	};
-	class 77th_Specialist_Uniform: SWLB_clone_base_P2
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Specialist";
-		
-		uniformClass="77th_Trooper_Uniform";
-		linkedItems[]={};
-		respawnLinkedItems[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\Specialist_UpperBody",
-			"AUX77_PBO\data\Specialist_LowerBody",
-		};
-	};
-	class 77th_Copral_Uniform: SWLB_clone_base_P2
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Copral";
-		
-		uniformClass="77th_Copral_Uniform";
-		linkedItems[]={};
-		respawnLinkedItems[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\Copral_UpperBody",
-			"AUX77_PBO\data\Copral_LowerBody",
-		};
-	};
-	class 77th_Sergant_Uniform: SWLB_clone_base_P2
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Sergant";
-		
-		uniformClass="77th_Sergant_Uniform";
-		linkedItems[]={};
-		respawnLinkedItems[]={};
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\Sergant_UpperBody",
-			"AUX77_PBO\data\Sergant_LowerBody",
-		};
-	};
 	class 77th_Sergant_Veteran_Uniform: SWLB_clone_base_P2
 	{
 		author="Teasera";
@@ -575,13 +258,61 @@ class CfgVehicles
 		scopeArsenal=2;
 		displayName="[77th] Sergant Veteran";
 		
-		uniformClass="77th_Sergant_Uniform";
+		uniformClass="77th_Sergant_Veteran_Uniform";
 		linkedItems[]={};
 		respawnLinkedItems[]={};
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Sergant_Veteran_UpperBody",
 			"AUX77_PBO\data\Sergant_Veteran_LowerBody",
+		};
+	};
+	class 77th_Copral_Veteran_Uniform: SWLB_clone_base_P2
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Copral Veteran";
+		
+		uniformClass="77th_Copral_Veteran_Uniform";
+		linkedItems[]={};
+		respawnLinkedItems[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Copral_Veteran_UpperBody",
+			"AUX77_PBO\data\Copral_Veteran_LowerBody",
+		};
+	};
+	class 77th_Specialist_Veteran_Uniform: SWLB_clone_base_P2
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Specialist Veteran";
+		
+		uniformClass="77th_Specialist_Veteran_Uniform";
+		linkedItems[]={};
+		respawnLinkedItems[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Specialist_Veteran_UpperBody",
+			"AUX77_PBO\data\Specialist_Veteran_LowerBody",
+		};
+	};
+	class 77th_Trooper_Veteran_Uniform: SWLB_clone_base_P2
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Trooper Veteran";
+		
+		uniformClass="77th_Trooper_Veteran_Uniform";
+		linkedItems[]={};
+		respawnLinkedItems[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Trooper_Veteran_UpperBody",
+			"AUX77_PBO\data\Trooper_Veteran_LowerBody",
 		};
 	};
 };
