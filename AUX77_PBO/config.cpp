@@ -4,15 +4,6 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"77th_CT2_Uniform",
-			"77th_CT3_Uniform",
-			"77th_CT4_Uniform",
-			"77th_CT5_Uniform",
-			"77th_Hornet_Uniform",
-			"77th_Trooper_Uniform",
-			"77th_Specialist_Uniform",
-			"77th_Copral_Uniform",
-			"77th_Sergant_Uniform",
 			"77th_Sergant_Veteran_Uniform",
 			"77th_Copral_Veteran_Uniform",
 			"77th_Specialist_Veteran_Uniform",
@@ -21,19 +12,11 @@ class CfgPatches
 		};
 		weapons[]=
 		{
-			"77th_CT2_Helmet",
-			"77th_CT3_Helmet",
-			"77th_CT4_Helmet",
-			"77th_CT5_Helmet",
-			"77th_Hornet_Helmet",
-			"77th_Trooper_Helmet",
-			"77th_Specialist_Helmet",
-			"77th_Copral_Helmet",
-			"77th_Sergant_Helmet",
 			"77th_Sergant_Veteran_Helmet",
 			"77th_Copral_Veteran_Helmet",
 			"77th_Specialist_Veteran_Helmet",
-			"77th_Trooper_Veteran_Helmet"
+			"77th_Trooper_Veteran_Helmet",
+			"77th_Web_Helmet"
 		};
 	};
 };
@@ -149,7 +132,7 @@ class CfgWeapons
 	};
 
 	class 77th_Copral_Veteran_Armor: SWLB_clone_uniform
-	{
+	{	
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
