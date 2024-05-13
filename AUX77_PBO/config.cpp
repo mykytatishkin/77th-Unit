@@ -102,21 +102,7 @@ class CfgWeapons
 	class lsd_gar_airborne_new;
 	class ls_gar_barc_helmet;
 	
-	class 77th_Sergant_Armor: SWLB_clone_uniform
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Sergant Armor";
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
-			uniformClass="77th_Sergant_Uniform";
-			containerClass="Supply100";
-			mass=40;
-			scope=2;
-		};
-	};
+//  =========================================================== SERGANT VETERAN
 
 	class 77th_Sergant_Veteran_Helmet: ls_gar_phase2_helmet
 	{
@@ -147,6 +133,8 @@ class CfgWeapons
 		};
 	};
 
+	//  =========================================================== COPRAL VETERAN
+	
 	class 77th_Copral_Veteran_Helmet: ls_gar_phase2_helmet
 	{
 		author="Teasera";
@@ -160,6 +148,24 @@ class CfgWeapons
 		};
 	};
 
+	class 77th_Copral_Veteran_Armor: SWLB_clone_uniform
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Copral Veteran Armor";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="77th_Corpal_Veteran_Uniform";
+			containerClass="Supply100";
+			mass=40;
+			scope=2;
+		};
+	};
+
+	//  =========================================================== SPECIALIST VETERAN
+	
 	class 77th_Specialist_Veteran_Armor: SWLB_clone_uniform
 	{
 		author="Teasera";
@@ -175,6 +181,22 @@ class CfgWeapons
 			scope=2;
 		};
 	};
+
+	class 77th_Specialist_Veteran_Helmet: ls_gar_phase2_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Specialist Veteran Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Specialist_Veteran_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa"
+		};
+	};
+	
+	//  =========================================================== TROOPER VETERAN
+
 	class 77th_Trooper_Veteran_Helmet: ls_gar_phase2_helmet
 	{
 		author="Teasera";
@@ -204,6 +226,8 @@ class CfgWeapons
 		};
 	};
 
+	//  =========================================================== CUSTOM HELMETS
+	
 	class 77th_Web_Helmet: ls_gar_barc_helmet
 	{
 		author="Teasera";
