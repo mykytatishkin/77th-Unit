@@ -242,6 +242,38 @@ class CfgWeapons
 		};
 	};
 
+		//  =========================================================== ARC Trooper
+
+	class 77th_Trooper_Veteran_Helmet: ls_gar_arc_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARC Trooper Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\ARC_Trooper_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa",
+			"AUX77_PBO\data\ARC_Trooper_Helmet_P2"
+		};
+	};
+
+	class 77th_Trooper_Veteran_Armor: SWLB_clone_uniform
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARC Trooper Armor";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="77th_ARC_Trooper_Uniform";
+			containerClass="Supply100";
+			mass=40;
+			scope=2;
+		};
+	};
+
 	//  =========================================================== CUSTOM HELMETS
 	
 	class 77th_Web_Helmet: SWLB_clone_BARC_helmet
@@ -405,6 +437,22 @@ class CfgVehicles
 		{
 			"AUX77_PBO\data\Trooper_Veteran_UpperBody",
 			"AUX77_PBO\data\Trooper_Veteran_LowerBody",
+		};
+	};
+	class 77th_ARC_Trooper_Uniform: SWLB_clone_base_P2
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Trooper Veteran";
+		
+		uniformClass="77th_Trooper_Veteran_Uniform";
+		linkedItems[]={};
+		respawnLinkedItems[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\ARC_Trooper_UpperBody",
+			"AUX77_PBO\data\ARC_Trooper_LowerBody",
 		};
 	};
 };
