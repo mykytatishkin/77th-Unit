@@ -8,7 +8,8 @@ class CfgPatches
 			"77th_Sergant_Veteran_Uniform",
 			"77th_Copral_Veteran_Uniform",
 			"77th_Specialist_Veteran_Uniform",
-			"77th_Trooper_Veteran_Uniform"
+			"77th_Trooper_Veteran_Uniform",
+			"77th_ARC_Trooper_Uniform"
 			
 		};
 		weapons[]=
@@ -18,7 +19,10 @@ class CfgPatches
 			"77th_Copral_Veteran_Helmet",
 			"77th_Specialist_Veteran_Helmet",
 			"77th_Trooper_Veteran_Helmet",
-			"77th_Web_Helmet"
+			"77th_Web_Helmet",
+			"77th_Trooper_ARF_Helmet_P2",
+			"77th_Maximum_ARF_Helmet_P2",
+			"77th_ARC_Trooper_P2"
 		};
 	};
 };
@@ -244,7 +248,7 @@ class CfgWeapons
 
 		//  =========================================================== ARC Trooper
 
-	class 77th_Trooper_Veteran_Helmet: ls_gar_arc_helmet
+	class 77th_ARC_Trooper_Helmet: ls_gar_arc_helmet
 	{
 		author="Teasera";
 		scope=2;
@@ -258,7 +262,7 @@ class CfgWeapons
 		};
 	};
 
-	class 77th_Trooper_Veteran_Armor: SWLB_clone_uniform
+	class 77th_ARC_Trooper_Armor: SWLB_clone_uniform
 	{
 		author="Teasera";
 		scope=2;
