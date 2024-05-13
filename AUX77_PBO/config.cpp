@@ -85,11 +85,10 @@ class CfgWeapons
 	class HeadgearItem;
 	class VestItem;
 	class lsd_gar_airborne_new;
-	class ls_gar_barc_helmet;
 	
 	//  =========================================================== OFFICER VETERAN
 
-	class 77th_Sergant_Veteran_Helmet: ls_gar_phase2_helmet
+	class 77th_Officer_Veteran_Helmet: ls_gar_phase2_helmet
 	{
 		author="Teasera";
 		scope=2;
@@ -102,7 +101,7 @@ class CfgWeapons
 		};
 	};
 
-	class 77th_Sergant_Veteran_Armor: SWLB_clone_uniform
+	class 77th_Officer_Veteran_Armor: SWLB_clone_uniform
 	{
 		author="Teasera";
 		scope=2;
@@ -245,7 +244,7 @@ class CfgWeapons
 
 	//  =========================================================== CUSTOM HELMETS
 	
-	class 77th_Web_Helmet: ls_gar_barc_helmet
+	class 77th_Web_Helmet: SWLB_clone_BARC_helmet
 	{
 		author="Teasera";
 		scope=2;
@@ -255,6 +254,34 @@ class CfgWeapons
 		{
 			"AUX77_PBO\data\Web_Helmet_Barc",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+
+	class 77th_Trooper_ARF_Helmet_P2: ls_gar_phase1Arf_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARF Trooper P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Trooper_ARF_P2",
+			"AUX77_PBO\data\ARF_Kilt",
+			"AUX77_PBO\data\ARF_Visor"
+		};
+	};
+
+	class 77th_Maximum_ARF_Helmet_P2: ls_gar_phase1Arf_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARF Maximum P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Maximum_ARF_P2",
+			"AUX77_PBO\data\ARF_Kilt",
+			"AUX77_PBO\data\ARF_Visor"
 		};
 	};
 };
@@ -291,6 +318,14 @@ class CfgVehicles
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_arc_backpack;
 	class SWLB_mando_base_assault;
+	class B_Kitbag_rgr;
+	class Steerable_Parachute_F;
+	class B_Parachute;
+	class Bag_Base;
+	class Weapon_Bag_Base: Bag_Base
+	{
+		class assembleInfo;
+	};
 
 	class 77th_Officer_Veteran_Uniform: SWLB_clone_base_P2
 	{
