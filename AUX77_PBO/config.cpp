@@ -4,6 +4,7 @@ class CfgPatches
 	{
 		units[]=
 		{
+			"77th_Officer_Veteran_Uniform",
 			"77th_Sergant_Veteran_Uniform",
 			"77th_Copral_Veteran_Uniform",
 			"77th_Specialist_Veteran_Uniform",
@@ -12,6 +13,7 @@ class CfgPatches
 		};
 		weapons[]=
 		{
+			"77th_Officer_Veteran_Helmet",
 			"77th_Sergant_Veteran_Helmet",
 			"77th_Copral_Veteran_Helmet",
 			"77th_Specialist_Veteran_Helmet",
@@ -85,7 +87,39 @@ class CfgWeapons
 	class lsd_gar_airborne_new;
 	class ls_gar_barc_helmet;
 	
-//  =========================================================== SERGANT VETERAN
+	//  =========================================================== OFFICER VETERAN
+
+	class 77th_Sergant_Veteran_Helmet: ls_gar_phase2_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Officer Veteran Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Officer_Veteran_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa"
+		};
+	};
+
+	class 77th_Sergant_Veteran_Armor: SWLB_clone_uniform
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Officer Veteran Armor";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="77th_Officer_Veteran_Uniform";
+			containerClass="Supply100";
+			mass=40;
+			scope=2;
+		};
+	};
+
+
+	//  =========================================================== SERGANT VETERAN
 
 	class 77th_Sergant_Veteran_Helmet: ls_gar_phase2_helmet
 	{
@@ -140,7 +174,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="77th_Corpal_Veteran_Uniform";
+			uniformClass="77th_Copral_Veteran_Uniform";
 			containerClass="Supply100";
 			mass=40;
 			scope=2;
@@ -257,7 +291,23 @@ class CfgVehicles
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_arc_backpack;
 	class SWLB_mando_base_assault;
-	
+
+	class 77th_Officer_Veteran_Uniform: SWLB_clone_base_P2
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Officer Veteran";
+		
+		uniformClass="77th_Officer_Veteran_Uniform";
+		linkedItems[]={};
+		respawnLinkedItems[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Officer_Veteran_UpperBody",
+			"AUX77_PBO\data\Officer_Veteran_LowerBody",
+		};
+	};
 	class 77th_Sergant_Veteran_Uniform: SWLB_clone_base_P2
 	{
 		author="Teasera";
