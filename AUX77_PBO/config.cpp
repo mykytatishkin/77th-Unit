@@ -342,6 +342,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Scout_Trooper_Helmet",
+			"AUX77_PBO\data\Scout_Visor",
 			"AUX77_PBO\data\Scout_Visor"
 		};
 	};
@@ -357,7 +358,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Pilot_Trooper_Helmet_P2",
-			"AUX77_PBO\data\Pilot_Visor"
+			"AUX77_PBO\data\Veteran_Visor"
 		};
 	};
 
@@ -371,13 +372,15 @@ class CfgWeapons
 		displayName="[77th] Engineer Helmet P2";
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Engineer_Trooper_Helmet_P2"
+			"AUX77_PBO\data\Engineer_Trooper_Helmet_P2",
+			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+			"ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		};
 	};
 
 	//  =========================================================== Barc HELMETS
 
-	class 77th_Barc_Helmet_P2: ls_gar_phase1Arf_helmet
+	class 77th_Barc_Helmet_P2: SWLB_clone_BARC_helmet
 	{
 		author="Teasera";
 		scope=2;
