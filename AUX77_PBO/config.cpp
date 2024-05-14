@@ -22,7 +22,7 @@ class CfgPatches
 			"77th_Web_Helmet",
 			"77th_Trooper_ARF_Helmet_P2",
 			"77th_Maximum_ARF_Helmet_P2",
-			"77th_ARC_Trooper_Helmet_P2"
+			"77th_ARC_Trooper_Helmet_P2",
 			"77th_ARC_Alpha_Trooper_Helmet_P2",
 			"77th_Barc_Helmet_P2",
 			"77th_Hazard_Helmet_P2",
