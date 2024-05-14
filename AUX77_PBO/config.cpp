@@ -359,7 +359,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Pilot_Trooper_Helmet_P2",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+			"AUX77_PBO\data\Pilot_Visor",
+			"AUX77_PBO\data\Pilot_Visor"
 		};
 	};
 
@@ -390,7 +391,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Barc_Trooper_Helmet_P2",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+			"AUX77_PBO\data\Barc_Visor",
+			"AUX77_PBO\data\Barc_Visor"
 		};
 	};
 
