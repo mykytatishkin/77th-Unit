@@ -565,7 +565,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		displayName="[77th] ARC 'Alpha'";
 		
-		uniformClass="77th_ARC_Alpha_Uniform";
+		uniformClass="77th_ARC_Alpha_Trooper_Uniform";
 		linkedItems[]={};
 		respawnLinkedItems[]={};
 		hiddenSelectionsTextures[]=
