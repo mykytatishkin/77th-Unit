@@ -28,7 +28,8 @@ class CfgPatches
 			"77th_Hazard_Helmet_P2",
 			"77th_Scout_Helmet_P2",
 			"77th_Pilot_Helmet_P2",
-			"77th_Engineer_Helmet_P2"
+			"77th_Engineer_Helmet_P2",
+			"77th_Hazard_Dornan_Helmet_P2"
 		};
 	};
 };
@@ -358,7 +359,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Pilot_Trooper_Helmet_P2",
-			"AUX77_PBO\data\Veteran_Visor"
+			"AUX77_PBO\data\Pilot_Visor"
 		};
 	};
 
@@ -372,7 +373,7 @@ class CfgWeapons
 		displayName="[77th] Engineer Helmet P2";
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Engineer_Trooper_Helmet_P2",
+			"AUX77_PBO\data\Engineer_Trooper_Helmet",
 			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
 			"ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
 		};
@@ -419,6 +420,19 @@ class CfgWeapons
 			"AUX77_PBO\data\Maximum_ARF_P2",
 			"AUX77_PBO\data\ARF_Kilt",
 			"AUX77_PBO\data\ARF_Visor"
+		};
+	};
+
+	class 77th_Hazard_Dornan_Helmet_P2: ls_gar_desert_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Dornan";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Hazard_Dornan_Helmet",
+			"AUX77_PBO\data\Hazard_Visor"
 		};
 	};
 };
