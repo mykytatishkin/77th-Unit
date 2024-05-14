@@ -9,7 +9,7 @@ class CfgPatches
 			"77th_Copral_Veteran_Uniform",
 			"77th_Specialist_Veteran_Uniform",
 			"77th_Trooper_Veteran_Uniform",
-			"77th_ARC_Trooper_Uniform"
+			"77th_ARC_Alpha_Trooper_Uniform"
 			
 		};
 		weapons[]=
@@ -285,7 +285,7 @@ class CfgWeapons
 		};
 	};
 
-	class 77th_ARC_Trooper_Armor: SWLB_clone_uniform
+	class 77th_ARC_Alpha_Trooper_Armor: SWLB_clone_uniform
 	{
 		author="Teasera";
 		scope=2;
@@ -359,7 +359,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Pilot_Trooper_Helmet_P2",
-			"AUX77_PBO\data\Pilot_Visor"
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
 
@@ -390,7 +390,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Barc_Trooper_Helmet_P2",
-			"AUX77_PBO\data\Barc_Visor"
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
 
