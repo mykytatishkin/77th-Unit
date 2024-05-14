@@ -22,7 +22,13 @@ class CfgPatches
 			"77th_Web_Helmet",
 			"77th_Trooper_ARF_Helmet_P2",
 			"77th_Maximum_ARF_Helmet_P2",
-			"77th_ARC_Trooper_P2"
+			"77th_ARC_Trooper_Helmet_P2"
+			"77th_ARC_Alpha_Trooper_Helmet_P2",
+			"77th_Barc_Helmet_P2",
+			"77th_Hazard_Helmet_P2",
+			"77th_Scout_Helmet_P2",
+			"77th_Pilot_Helmet_P2",
+			"77th_Engineer_Helmet_P2"
 		};
 	};
 };
@@ -89,6 +95,8 @@ class CfgWeapons
 	class HeadgearItem;
 	class VestItem;
 	class lsd_gar_airborne_new;
+	class ls_gar_desert_helmet;
+	class ls_gar_scout_helmet;
 	
 	//  =========================================================== OFFICER VETERAN
 
@@ -262,6 +270,20 @@ class CfgWeapons
 		};
 	};
 
+	class 77th_ARC_Alpha_Trooper_Helmet: ls_gar_arc_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARC 'Alpha' Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\ARC_Alpha_Trooper_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa",
+			"AUX77_PBO\data\ARC_Alpha_Trooper_Helmet_P2"
+		};
+	};
+
 	class 77th_ARC_Trooper_Armor: SWLB_clone_uniform
 	{
 		author="Teasera";
@@ -278,21 +300,8 @@ class CfgWeapons
 		};
 	};
 
-	//  =========================================================== CUSTOM HELMETS
+	//  =========================================================== ARF HELMETS
 	
-	class 77th_Web_Helmet: SWLB_clone_BARC_helmet
-	{
-		author="Teasera";
-		scope=2;
-		scopeArsenal=2;
-		displayName="[77th] Web";
-		hiddenSelectionsTextures[]=
-		{
-			"AUX77_PBO\data\Web_Helmet_Barc",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-		};
-	};
-
 	class 77th_Trooper_ARF_Helmet_P2: ls_gar_phase1Arf_helmet
 	{
 		author="Teasera";
@@ -304,6 +313,95 @@ class CfgWeapons
 			"AUX77_PBO\data\Trooper_ARF_P2",
 			"AUX77_PBO\data\ARF_Kilt",
 			"AUX77_PBO\data\ARF_Visor"
+		};
+	};
+	
+	//  =========================================================== HAZARD HELMETS
+
+	class 77th_Hazard_Helmet_P2: ls_gar_desert_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Hazard P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Hazard_Trooper_Helmet",
+			"AUX77_PBO\data\Hazard_Visor"
+		};
+	};
+
+	//  =========================================================== Scout HELMETS
+
+	class 77th_Scout_Helmet_P2: ls_gar_scout_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Scout Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Scout_Trooper_Helmet",
+			"AUX77_PBO\data\Scout_Visor"
+		};
+	};
+	
+	//  =========================================================== Pilot HELMETS
+
+	class 77th_Pilot_Helmet_P2: SWLB_clone_pilot_P2_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Pilot Helmet P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Pilot_Trooper_Helmet_P2",
+			"AUX77_PBO\data\Pilot_Visor"
+		};
+	};
+
+	//  =========================================================== Engineer HELMETS
+
+	class 77th_Engineer_Helmet_P2: ls_gar_engineer_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Engineer Helmet P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Engineer_Trooper_Helmet_P2"
+		};
+	};
+
+	//  =========================================================== Barc HELMETS
+
+	class 77th_Barc_Helmet_P2: ls_gar_phase1Arf_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Barc Helmet P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Barc_Trooper_Helmet_P2",
+			"AUX77_PBO\data\Barc_Visor"
+		};
+	};
+
+	//  =========================================================== CUSTOM HELMETS
+	
+	class 77th_Web_Helmet: SWLB_clone_BARC_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Web";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Web_Helmet_Barc",
+			"AUX77_PBO\data\Barc_Visor"
 		};
 	};
 
@@ -443,20 +541,20 @@ class CfgVehicles
 			"AUX77_PBO\data\Trooper_Veteran_LowerBody",
 		};
 	};
-	class 77th_ARC_Trooper_Uniform: SWLB_clone_base_P2
+	class 77th_ARC_Alpha_Trooper_Uniform: SWLB_clone_base_P2
 	{
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Trooper Veteran";
+		displayName="[77th] ARC 'Alpha'";
 		
-		uniformClass="77th_Trooper_Veteran_Uniform";
+		uniformClass="77th_ARC_Alpha_Uniform";
 		linkedItems[]={};
 		respawnLinkedItems[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\ARC_Trooper_UpperBody",
-			"AUX77_PBO\data\ARC_Trooper_LowerBody",
+			"AUX77_PBO\data\ARC_Alpha_Trooper_UpperBody",
+			"AUX77_PBO\data\ARC_Alpha_Trooper_LowerBody",
 		};
 	};
 };
