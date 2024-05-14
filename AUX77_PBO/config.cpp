@@ -294,7 +294,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="77th_ARC_Trooper_Uniform";
+			uniformClass="77th_ARC_Alpha_Trooper_Uniform";
 			containerClass="Supply100";
 			mass=40;
 			scope=2;
