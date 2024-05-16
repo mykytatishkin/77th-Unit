@@ -29,7 +29,8 @@ class CfgPatches
 			"77th_Scout_Helmet_P2",
 			"77th_Pilot_Helmet_P2",
 			"77th_Engineer_Helmet_P2",
-			"77th_Hazard_Dornan_Helmet_P2"
+			"77th_Hazard_Dornan_Helmet_P2",
+			"77th_Airborne_Helmet_P2"
 		};
 	};
 };
@@ -380,6 +381,22 @@ class CfgWeapons
 		};
 	};
 
+	//  =========================================================== Airborne HELMETS
+
+	class 77th_Airborne_Helmet_P2: lsd_gar_airborne_new
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Airborne Helmet P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Airborne_Trooper_Helmet_P2",
+			"AUX77_PBO\data\Airborne_Visor",
+		};
+	};
+
+
 	//  =========================================================== Barc HELMETS
 
 	class 77th_Barc_Helmet_P2: SWLB_clone_BARC_helmet
@@ -391,8 +408,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Barc_Trooper_Helmet_P2",
-			"AUX77_PBO\data\Barc_Visor",
-			"AUX77_PBO\data\Barc_Visor"
+			"AUX77_PBO\data\Airborne_Visor",
 		};
 	};
 
