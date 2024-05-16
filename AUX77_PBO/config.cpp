@@ -99,6 +99,7 @@ class CfgWeapons
 	class lsd_gar_airborne_new;
 	class ls_gar_desert_helmet;
 	class ls_gar_scout_helmet;
+	class lsd_gar_arc_helmet;
 	
 	//  =========================================================== OFFICER VETERAN
 
@@ -111,6 +112,19 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Officer_Veteran_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa"
+		};
+	};
+
+	class 77th_Officer_Veteran_2_Helmet: ls_gar_phase2_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Officer 2 Veteran Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Officer_Veteran_Helmet_2_P2",
 			"AUX77_PBO\data\Veteran_Visor.paa"
 		};
 	};
@@ -258,7 +272,7 @@ class CfgWeapons
 
 		//  =========================================================== ARC Trooper
 
-	class 77th_ARC_Trooper_Helmet: ls_gar_arc_helmet
+	class 77th_ARC_Trooper_Helmet: lsd_gar_arc_helmet
 	{
 		author="Teasera";
 		scope=2;
@@ -383,7 +397,7 @@ class CfgWeapons
 
 	//  =========================================================== Airborne HELMETS
 
-	class 77th_Airborne_Helmet_P2: lsd_gar_airborne_new
+	class 77th_Airborne_Helmet_P2: SWLB_clone_AB_helmet
 	{
 		author="Teasera";
 		scope=2;
