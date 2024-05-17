@@ -5,8 +5,8 @@ class CfgPatches
 		units[]=
 		{
 			"77th_Officer_Veteran_Uniform",
-			"77th_Sergant_Veteran_Uniform",
-			"77th_Copral_Veteran_Uniform",
+			"77th_Sergeant_Veteran_Uniform",
+			"77th_Corporal_Veteran_Uniform",
 			"77th_Specialist_Veteran_Uniform",
 			"77th_Trooper_Veteran_Uniform",
 			"77th_ARC_Alpha_Trooper_Uniform"
@@ -15,8 +15,8 @@ class CfgPatches
 		weapons[]=
 		{
 			"77th_Officer_Veteran_Helmet",
-			"77th_Sergant_Veteran_Helmet",
-			"77th_Copral_Veteran_Helmet",
+			"77th_Sergeant_Veteran_Helmet",
+			"77th_Corporal_Veteran_Helmet",
 			"77th_Specialist_Veteran_Helmet",
 			"77th_Trooper_Veteran_Helmet",
 			"77th_Web_Helmet",
@@ -146,62 +146,62 @@ class CfgWeapons
 	};
 
 
-	//  =========================================================== SERGANT VETERAN
+	//  =========================================================== Sergeant VETERAN
 
-	class 77th_Sergant_Veteran_Helmet: ls_gar_phase2_helmet
+	class 77th_Sergeant_Veteran_Helmet: ls_gar_phase2_helmet
 	{
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Sergant Veteran Helmet";
+		displayName="[77th] Sergeant Veteran Helmet";
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Sergant_Veteran_Helmet_P2",
+			"AUX77_PBO\data\Sergeant_Veteran_Helmet_P2",
 			"AUX77_PBO\data\Veteran_Visor.paa"
 		};
 	};
 
-	class 77th_Sergant_Veteran_Armor: SWLB_clone_uniform
+	class 77th_Sergeant_Veteran_Armor: SWLB_clone_uniform
 	{
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Sergant Veteran Armor";
+		displayName="[77th] Sergeant Veteran Armor";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="77th_Sergant_Veteran_Uniform";
+			uniformClass="77th_Sergeant_Veteran_Uniform";
 			containerClass="Supply100";
 			mass=40;
 			scope=2;
 		};
 	};
 
-	//  =========================================================== COPRAL VETERAN
+	//  =========================================================== Corporal VETERAN
 	
-	class 77th_Copral_Veteran_Helmet: ls_gar_phase2_helmet
+	class 77th_Corporal_Veteran_Helmet: ls_gar_phase2_helmet
 	{
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Copral Veteran Helmet";
+		displayName="[77th] Corporal Veteran Helmet";
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Copral_Veteran_Helmet_P2",
+			"AUX77_PBO\data\Corporal_Veteran_Helmet_P2",
 			"AUX77_PBO\data\Veteran_Visor.paa"
 		};
 	};
 
-	class 77th_Copral_Veteran_Armor: SWLB_clone_uniform
+	class 77th_Corporal_Veteran_Armor: SWLB_clone_uniform
 	{	
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Copral Veteran Armor";
+		displayName="[77th] Corporal Veteran Armor";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="77th_Copral_Veteran_Uniform";
+			uniformClass="77th_Corporal_Veteran_Uniform";
 			containerClass="Supply100";
 			mass=40;
 			scope=2;
@@ -526,36 +526,36 @@ class CfgVehicles
 			"AUX77_PBO\data\Officer_Veteran_LowerBody",
 		};
 	};
-	class 77th_Sergant_Veteran_Uniform: SWLB_clone_base_P2
+	class 77th_Sergeant_Veteran_Uniform: SWLB_clone_base_P2
 	{
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Sergant Veteran";
+		displayName="[77th] Sergeant Veteran";
 		
-		uniformClass="77th_Sergant_Veteran_Uniform";
+		uniformClass="77th_Sergeant_Veteran_Uniform";
 		linkedItems[]={};
 		respawnLinkedItems[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Sergant_Veteran_UpperBody",
-			"AUX77_PBO\data\Sergant_Veteran_LowerBody",
+			"AUX77_PBO\data\Sergeant_Veteran_UpperBody",
+			"AUX77_PBO\data\Sergeant_Veteran_LowerBody",
 		};
 	};
-	class 77th_Copral_Veteran_Uniform: SWLB_clone_base_P2
+	class 77th_Corporal_Veteran_Uniform: SWLB_clone_base_P2
 	{
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Copral Veteran";
+		displayName="[77th] Corporal Veteran";
 		
-		uniformClass="77th_Copral_Veteran_Uniform";
+		uniformClass="77th_Corporal_Veteran_Uniform";
 		linkedItems[]={};
 		respawnLinkedItems[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Copral_Veteran_UpperBody",
-			"AUX77_PBO\data\Copral_Veteran_LowerBody",
+			"AUX77_PBO\data\Corporal_Veteran_UpperBody",
+			"AUX77_PBO\data\Corporal_Veteran_LowerBody",
 		};
 	};
 	class 77th_Specialist_Veteran_Uniform: SWLB_clone_base_P2
