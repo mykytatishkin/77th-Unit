@@ -43,7 +43,10 @@ class CfgPatches
 			"77th_Scout_Corporal_Helmet_P2",
 			"77th_Pilot_Helmet_P2",
 			"77th_Engineer_Helmet_P2",
-			"77th_Airborne_Helmet_P2"
+			"77th_Airborne_Helmet_P2",
+			"77th_Airborne_Med_P2",
+			"77th_Airborne_Corporal_P2",
+			"77th_Airborne_Sergeant_P2"
 		};
 	};
 };
@@ -297,6 +300,19 @@ class CfgWeapons
 			scope=2;
 		};
 	};
+
+	class 77th_Trooper_Medic_Helmet: ls_gar_phase2_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Trooper Medic Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Trooper_Med_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa"
+		};
+	};
 	//  =========================================================== ARC Trooper
 
 	class 77th_ARC_Trooper_Helmet: lsd_gar_arc_helmet
@@ -322,6 +338,34 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\ARC_Med_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa",
+			"AUX77_PBO\data\ARC_Trooper_Helmet_P2"
+		};
+	};
+
+	class 77th_ARC_Corporal_Helmet: lsd_gar_arc_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARC Corporal Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\ARC_Corporal_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa",
+			"AUX77_PBO\data\ARC_Trooper_Helmet_P2"
+		};
+	};
+
+	class 77th_ARC_Sergeant_Helmet: lsd_gar_arc_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARC Corporal Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\ARC_Sergeant_Helmet_P2",
 			"AUX77_PBO\data\Veteran_Visor.paa",
 			"AUX77_PBO\data\ARC_Trooper_Helmet_P2"
 		};
@@ -556,6 +600,45 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Airborne_Trooper_Helmet_P2",
+			"AUX77_PBO\data\Airborne_Visor",
+		};
+	};
+
+	class 77th_Airborne_Med_P2: SWLB_clone_AB_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Airborne Med Helmet P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Airborne_Med_Helmet_P2",
+			"AUX77_PBO\data\Airborne_Visor",
+		};
+	};
+
+	class 77th_Airborne_Corporal_P2: SWLB_clone_AB_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Airborne Corporal Helmet P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Airborne_Corporal_Helmet_P2",
+			"AUX77_PBO\data\Airborne_Visor",
+		};
+	};
+
+	class 77th_Airborne_Sergeant_P2: SWLB_clone_AB_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Airborne Sergeant Helmet P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Airborne_Sergeant_Helmet_P2",
 			"AUX77_PBO\data\Airborne_Visor",
 		};
 	};
