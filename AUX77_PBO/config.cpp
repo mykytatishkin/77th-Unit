@@ -9,7 +9,8 @@ class CfgPatches
 			"77th_Copral_Veteran_Uniform",
 			"77th_Specialist_Veteran_Uniform",
 			"77th_Trooper_Veteran_Uniform",
-			"77th_ARC_Alpha_Trooper_Uniform"
+			"77th_ARC_Alpha_Trooper_Uniform",
+			"77th_Medic_Uniform"
 			
 		};
 		weapons[]=
@@ -19,17 +20,29 @@ class CfgPatches
 			"77th_Copral_Veteran_Helmet",
 			"77th_Specialist_Veteran_Helmet",
 			"77th_Trooper_Veteran_Helmet",
-			"77th_Web_Helmet",
-			"77th_Trooper_ARF_Helmet_P2",
-			"77th_Maximum_ARF_Helmet_P2",
+			"77th_ARF_Trooper_Helmet_P2",
+			"77th_ARF_Med_Helmet_P2",
+			"77th_ARF_Corporal_Helmet_P2",
+			"77th_ARF_Sergeant_Helmet_P2",
+			"77th_ARF_Maximum_Helmet_P2",
 			"77th_ARC_Trooper_Helmet_P2",
+			"77th_ARC_Med_Helmet_P2",
 			"77th_ARC_Alpha_Trooper_Helmet_P2",
 			"77th_Barc_Helmet_P2",
+			"77th_Barc_Med_Helmet_P2",
+			"77th_Barc_Corporal_Helmet_P2",
+			"77th_Barc_Sergeant_Helmet_P2",
+			"77th_Barc_Web_Helmet",
 			"77th_Hazard_Helmet_P2",
+			"77th_Hazard_Med_Helmet_P2",
+			"77th_Hazard_Corporal_Helmet_P2",
+			"77th_Hazard_Sergeant_Helmet_P2",
+			"77th_Hazard_Dornan_Helmet_P2",
 			"77th_Scout_Helmet_P2",
+			"77th_Scout_Med_Helmet_P2",
+			"77th_Scout_Corporal_Helmet_P2",
 			"77th_Pilot_Helmet_P2",
 			"77th_Engineer_Helmet_P2",
-			"77th_Hazard_Dornan_Helmet_P2",
 			"77th_Airborne_Helmet_P2"
 		};
 	};
@@ -144,7 +157,6 @@ class CfgWeapons
 			scope=2;
 		};
 	};
-
 
 	//  =========================================================== SERGANT VETERAN
 
@@ -269,8 +281,23 @@ class CfgWeapons
 			scope=2;
 		};
 	};
-
-		//  =========================================================== ARC Trooper
+	
+	class 77th_Trooper_Medic_Armor: SWLB_clone_uniform
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Trooper Medic Armor";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="77th_Medic_Uniform";
+			containerClass="Supply100";
+			mass=40;
+			scope=2;
+		};
+	};
+	//  =========================================================== ARC Trooper
 
 	class 77th_ARC_Trooper_Helmet: lsd_gar_arc_helmet
 	{
@@ -281,6 +308,20 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\ARC_Trooper_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa",
+			"AUX77_PBO\data\ARC_Trooper_Helmet_P2"
+		};
+	};
+
+	class 77th_ARC_Med_Helmet: lsd_gar_arc_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARC Med Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\ARC_Med_Helmet_P2",
 			"AUX77_PBO\data\Veteran_Visor.paa",
 			"AUX77_PBO\data\ARC_Trooper_Helmet_P2"
 		};
@@ -326,7 +367,49 @@ class CfgWeapons
 		displayName="[77th] ARF Trooper P2";
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Trooper_ARF_P2",
+			"AUX77_PBO\data\ARF_Trooper_Helmet_P2",
+			"AUX77_PBO\data\ARF_Kilt",
+			"AUX77_PBO\data\ARF_Visor"
+		};
+	};
+	
+	class 77th_Med_ARF_Helmet_P2: ls_gar_phase1Arf_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARF Med P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\ARF_Med_Helmet_P2",
+			"AUX77_PBO\data\ARF_Kilt",
+			"AUX77_PBO\data\ARF_Visor"
+		};
+	};
+	
+	class 77th_Corporal_ARF_Helmet_P2: ls_gar_phase1Arf_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARF Corporal P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\ARF_Corporal_Helmet_P2",
+			"AUX77_PBO\data\ARF_Kilt",
+			"AUX77_PBO\data\ARF_Visor"
+		};
+	};
+	
+	class 77th_Sergeant_ARF_Helmet_P2: ls_gar_phase1Arf_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARF Sergeant P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\ARF_Sergeant_Helmet_P2",
 			"AUX77_PBO\data\ARF_Kilt",
 			"AUX77_PBO\data\ARF_Visor"
 		};
@@ -347,6 +430,45 @@ class CfgWeapons
 		};
 	};
 
+	class 77th_Hazard_Med_Helmet_P2: ls_gar_desert_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Hazard Med P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Hazard_Med_Helmet",
+			"AUX77_PBO\data\Hazard_Visor"
+		};
+	};
+
+	class 77th_Hazard_Corporal_Helmet_P2: ls_gar_desert_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Hazard Corporal P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Hazard_Corporal_Helmet",
+			"AUX77_PBO\data\Hazard_Visor"
+		};
+	};
+
+	class 77th_Hazard_Sergeant_Helmet_P2: ls_gar_desert_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Hazard Sergeant P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Hazard_Sergeant_Helmet",
+			"AUX77_PBO\data\Hazard_Visor"
+		};
+	};
+
 	//  =========================================================== Scout HELMETS
 
 	class 77th_Scout_Helmet_P2: ls_gar_scout_helmet
@@ -363,6 +485,34 @@ class CfgWeapons
 		};
 	};
 	
+	class 77th_Scout_Med_Helmet_P2: ls_gar_scout_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Scout Med Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Scout_Med_Helmet",
+			"AUX77_PBO\data\Scout_Visor",
+			"AUX77_PBO\data\Scout_Visor"
+		};
+	};
+
+	class 77th_Scout_Corporal_Helmet_P2: ls_gar_scout_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Scout Corporal Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Scout_Corporal_Helmet",
+			"AUX77_PBO\data\Scout_Visor",
+			"AUX77_PBO\data\Scout_Visor"
+		};
+	};
+
 	//  =========================================================== Pilot HELMETS
 
 	class 77th_Pilot_Helmet_P2: SWLB_clone_pilot_P2_helmet
@@ -410,7 +560,6 @@ class CfgWeapons
 		};
 	};
 
-
 	//  =========================================================== Barc HELMETS
 
 	class 77th_Barc_Helmet_P2: SWLB_clone_BARC_helmet
@@ -425,10 +574,49 @@ class CfgWeapons
 			"AUX77_PBO\data\Airborne_Visor",
 		};
 	};
+	
+	class 77th_Barc_Med_Helmet_P2: SWLB_clone_BARC_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Barc Med Helmet P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Barc_Med_Helmet_P2",
+			"AUX77_PBO\data\Barc_Visor",
+		};
+	};
+
+	class 77th_Barc_Corporal_Helmet_P2: SWLB_clone_BARC_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Barc Corporal Helmet P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Barc_Corporal_Helmet_P2",
+			"AUX77_PBO\data\Barc_Visor",
+		};
+	};
+
+	class 77th_Barc_Sergeant_Helmet_P2: SWLB_clone_BARC_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Barc Sergeant Helmet P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Barc_Sergeant_Helmet_P2",
+			"AUX77_PBO\data\Barc_Visor",
+		};
+	};
 
 	//  =========================================================== CUSTOM HELMETS
 	
-	class 77th_Web_Helmet: SWLB_clone_BARC_helmet
+	class 77th_Barc_Web_Helmet: SWLB_clone_BARC_helmet
 	{
 		author="Teasera";
 		scope=2;
@@ -441,7 +629,7 @@ class CfgWeapons
 		};
 	};
 
-	class 77th_Maximum_ARF_Helmet_P2: ls_gar_phase1Arf_helmet
+	class 77th_ARF_Maximum_Helmet_P2: ls_gar_phase1Arf_helmet
 	{
 		author="Teasera";
 		scope=2;
@@ -604,6 +792,22 @@ class CfgVehicles
 		{
 			"AUX77_PBO\data\ARC_Alpha_Trooper_UpperBody",
 			"AUX77_PBO\data\ARC_Alpha_Trooper_LowerBody",
+		};
+	};
+	class 77th_Medic_Uniform: SWLB_clone_base_P2
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Medic Trooper";
+		
+		uniformClass="77th_Medic_Uniform";
+		linkedItems[]={};
+		respawnLinkedItems[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Trooper_Med_UpperBody",
+			"AUX77_PBO\data\Trooper_Med_LowerBody",
 		};
 	};
 };
