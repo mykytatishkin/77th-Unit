@@ -5,21 +5,24 @@ class CfgPatches
 		units[]=
 		{
 			"77th_Officer_Veteran_Uniform",
+			"77th_Officer_2_Uniform",
 			"77th_Sergant_Veteran_Uniform",
 			"77th_Copral_Veteran_Uniform",
 			"77th_Specialist_Veteran_Uniform",
 			"77th_Trooper_Veteran_Uniform",
 			"77th_ARC_Alpha_Trooper_Uniform",
-			"77th_Medic_Uniform"
+			"77th_Medic_Uniform",
+			"77th_Medic_2_Uniform"
 			
 		};
 		weapons[]=
 		{
-			"77th_Officer_Veteran_Helmet",
-			"77th_Sergant_Veteran_Helmet",
-			"77th_Copral_Veteran_Helmet",
-			"77th_Specialist_Veteran_Helmet",
-			"77th_Trooper_Veteran_Helmet",
+			"77th_Officer_Veteran_Helmet_P2",
+			"77th_Officer_2_Helmet_P2"
+			"77th_Sergant_Veteran_Helmet_P2",
+			"77th_Copral_Veteran_Helmet_P2",
+			"77th_Specialist_Veteran_Helmet_P2",
+			"77th_Trooper_Veteran_Helmet_P2",
 			"77th_ARF_Trooper_Helmet_P2",
 			"77th_ARF_Med_Helmet_P2",
 			"77th_ARF_Corporal_Helmet_P2",
@@ -161,6 +164,35 @@ class CfgWeapons
 		};
 	};
 
+	class 77th_Officer_2_Helmet: ls_gar_phase2_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Officer 2 Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Officer_2_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa"
+		};
+	};
+
+	class 77th_Officer_Veteran_Armor: SWLB_clone_uniform
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Officer 2 Armor";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="77th_Officer_2_Uniform";
+			containerClass="Supply100";
+			mass=40;
+			scope=2;
+		};
+	};
+
 	//  =========================================================== SERGANT VETERAN
 
 	class 77th_Sergant_Veteran_Helmet: ls_gar_phase2_helmet
@@ -285,6 +317,8 @@ class CfgWeapons
 		};
 	};
 	
+	//  =========================================================== MED Trooper
+
 	class 77th_Trooper_Medic_Armor: SWLB_clone_uniform
 	{
 		author="Teasera";
@@ -309,10 +343,40 @@ class CfgWeapons
 		displayName="[77th] Trooper Medic Helmet";
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Trooper_Med_Helmet_P2",
+			"AUX77_PBO\data\Med_Trooper_Helmet_P2",
 			"AUX77_PBO\data\Veteran_Visor.paa"
 		};
 	};
+
+	class 77th_Trooper_Medic_2_Armor: SWLB_clone_uniform
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Trooper Medic 2 Armor";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="77th_Medic_2_Uniform";
+			containerClass="Supply100";
+			mass=40;
+			scope=2;
+		};
+	};
+
+	class 77th_Trooper_Medic_2_Helmet: ls_gar_phase2_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Trooper Medic 2 Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Med_Trooper_2_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Visor.paa"
+		};
+	};
+
 	//  =========================================================== ARC Trooper
 
 	class 77th_ARC_Trooper_Helmet: lsd_gar_arc_helmet
@@ -797,6 +861,22 @@ class CfgVehicles
 			"AUX77_PBO\data\Officer_Veteran_LowerBody",
 		};
 	};
+	class 77th_Officer_2_Uniform: SWLB_clone_base_P2
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Officer 2";
+		
+		uniformClass="77th_Officer_2_Uniform";
+		linkedItems[]={};
+		respawnLinkedItems[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Officer_2_UpperBody",
+			"AUX77_PBO\data\Officer_2_LowerBody",
+		};
+	};
 	class 77th_Sergant_Veteran_Uniform: SWLB_clone_base_P2
 	{
 		author="Teasera";
@@ -889,8 +969,24 @@ class CfgVehicles
 		respawnLinkedItems[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Trooper_Med_UpperBody",
-			"AUX77_PBO\data\Trooper_Med_LowerBody",
+			"AUX77_PBO\data\Med_Trooper_UpperBody",
+			"AUX77_PBO\data\Med_Trooper_LowerBody",
+		};
+	};
+	class 77th_Medic_2_Uniform: SWLB_clone_base_P2
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Medic 2 Trooper";
+		
+		uniformClass="77th_Medic_2_Uniform";
+		linkedItems[]={};
+		respawnLinkedItems[]={};
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\Med_Trooper_2_UpperBody",
+			"AUX77_PBO\data\Med_Trooper_2_LowerBody",
 		};
 	};
 };
