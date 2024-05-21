@@ -18,7 +18,7 @@ class CfgPatches
 		weapons[]=
 		{
 			"77th_Officer_Veteran_Helmet_P2",
-			"77th_Officer_2_Helmet_P2"
+			"77th_Officer_2_Helmet_P2",
 			"77th_Sergant_Veteran_Helmet_P2",
 			"77th_Copral_Veteran_Helmet_P2",
 			"77th_Specialist_Veteran_Helmet_P2",
@@ -177,7 +177,7 @@ class CfgWeapons
 		};
 	};
 
-	class 77th_Officer_Veteran_Armor: SWLB_clone_uniform
+	class 77th_Officer_2_Armor: SWLB_clone_uniform
 	{
 		author="Teasera";
 		scope=2;
@@ -495,6 +495,33 @@ class CfgWeapons
 		};
 	};
 	
+	class 77th_Sypher_ARF_Helmet_P2: ls_gar_phase1Arf_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] ARF Sypher P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\ARF_Trooper_Helmet_P2",
+			"AUX77_PBO\data\ARF_Sypher_Kilt",
+			"AUX77_PBO\data\ARF_Visor"
+		};
+	};
+	class 77th_Garage_ARF_Helmet_P2: ls_gar_phase1Arf_helmet
+	{
+		author="Teasera";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[77th] Garage glubinka P2";
+		hiddenSelectionsTextures[]=
+		{
+			"AUX77_PBO\data\ARF_Ruskaya_Glubinka_Helmet_P2",
+			"AUX77_PBO\data\ARF_Kilt",
+			"AUX77_PBO\data\ARF_Visor"
+		};
+	};
+
 	class 77th_Corporal_ARF_Helmet_P2: ls_gar_phase1Arf_helmet
 	{
 		author="Teasera";
