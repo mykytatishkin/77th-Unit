@@ -232,7 +232,7 @@ class CfgWeapons
 
 	//  =========================================================== CORPORAL VETERAN
 	
-	class 77th_Copral_Veteran_Helmet: ls_gar_phase2_helmet
+	class 77th_Corporal_Veteran_Helmet: ls_gar_phase2_helmet
 	{
 		author="Teasera";
 		scope=2;
@@ -240,21 +240,21 @@ class CfgWeapons
 		displayName="[77th] Corporal (CCO)";
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Copral_Veteran_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Corporal_Helmet_P2",
 			"AUX77_PBO\data\Veteran_Visor.paa"
 		};
 	};
 
-	class 77th_Copral_Veteran_Armor: SWLB_clone_uniform
+	class 77th_Corporal_Veteran_Armor: SWLB_clone_uniform
 	{	
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Copral (CCO)";
+		displayName="[77th] Corporal (CCO)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="77th_Copral_Veteran_Uniform";
+			uniformClass="77th_Veteran_Corporal_Uniform";
 			containerClass="Supply100";
 			mass=40;
 			scope=2;
@@ -272,7 +272,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="77th_Specialist_Veteran_Uniform";
+			uniformClass="77th_Veteran_Specialist_Uniform";
 			containerClass="Supply100";
 			mass=40;
 			scope=2;
@@ -287,7 +287,7 @@ class CfgWeapons
 		displayName="[77th] Specialist (CS)";
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Specialist_Veteran_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Specialist_Helmet_P2",
 			"AUX77_PBO\data\Veteran_Visor.paa"
 		};
 	};
@@ -302,7 +302,7 @@ class CfgWeapons
 		displayName="[77th] Trooper (CT)";
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Trooper_Veteran_Helmet_P2",
+			"AUX77_PBO\data\Veteran_Trooper_Helmet_P2",
 			"AUX77_PBO\data\Veteran_Visor.paa"
 		};
 	};
@@ -316,7 +316,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="77th_Trooper_Veteran_Uniform";
+			uniformClass="77th_Veteran_Trooper_Uniform";
 			containerClass="Supply100";
 			mass=40;
 			scope=2;
@@ -566,7 +566,7 @@ class CfgWeapons
 		displayName="[77th] ARF Maximum (Personal)";
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Maximum_ARF_P2",
+			"AUX77_PBO\data\ARF_Maximum_P2",
 			"AUX77_PBO\data\ARF_Kilt",
 			"AUX77_PBO\data\ARF_Visor"
 		};
@@ -779,7 +779,7 @@ class CfgWeapons
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Airborne (CT)}";
+		displayName="[77th] Airborne (CT)";
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Airborne_Trooper_Helmet_P2",
@@ -888,7 +888,7 @@ class CfgWeapons
 		displayName="[77th] Barc Web (Personal)";
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Web_Helmet_Barc",
+			"AUX77_PBO\data\Barc_Web_Helmet_P2",
 			"AUX77_PBO\data\Barc_Visor"
 		};
 	};
@@ -995,7 +995,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		displayName="[77th] Corporal (CCO)";
 		
-		uniformClass="77th_Veteran_Copral_Uniform";
+		uniformClass="77th_Veteran_Corporal_Uniform";
 		linkedItems[]={};
 		respawnLinkedItems[]={};
 		hiddenSelectionsTextures[]=
@@ -1041,7 +1041,7 @@ class CfgVehicles
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] 1st 'Alpha'";
+		displayName="[77th] ARC (Alpha)";
 		
 		uniformClass="77th_ARC_Alpha_Trooper_Uniform";
 		linkedItems[]={};
@@ -1057,7 +1057,7 @@ class CfgVehicles
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Medic";
+		displayName="[77th] Medic (Med)";
 		
 		uniformClass="77th_Medic_Uniform";
 		linkedItems[]={};
@@ -1073,7 +1073,7 @@ class CfgVehicles
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Medic 2";
+		displayName="[77th] Medic 2 (Med)";
 		
 		uniformClass="77th_Medic_2_Uniform";
 		linkedItems[]={};
@@ -1089,7 +1089,7 @@ class CfgVehicles
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Medic 3";
+		displayName="[77th] Medic 3 (Med)";
 		
 		uniformClass="77th_Medic_3_Uniform";
 		linkedItems[]={};
