@@ -1025,7 +1025,7 @@ class CfgVehicles
 		author="Teasera";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[77th] Trooper Veteran";
+		displayName="[77th] Trooper (CT)";
 		
 		uniformClass="77th_Veteran_Trooper_Uniform";
 		linkedItems[]={};
