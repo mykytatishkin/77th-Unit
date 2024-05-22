@@ -1032,8 +1032,8 @@ class CfgVehicles
 		respawnLinkedItems[]={};
 		hiddenSelectionsTextures[]=
 		{
-			"AUX77_PBO\data\Trooper_Veteran_UpperBody",
-			"AUX77_PBO\data\Trooper_Veteran_LowerBody",
+			"AUX77_PBO\data\Veteran_Trooper_UpperBody",
+			"AUX77_PBO\data\Veteran_Trooper_LowerBody",
 		};
 	};
 	class 77th_ARC_Alpha_Trooper_Uniform: SWLB_clone_base_P2
