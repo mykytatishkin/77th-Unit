@@ -953,7 +953,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Veteran_Officer_UpperBody",
-			"AUX77_PBO\data\Veteran_Officer_LowerBody",
+			"AUX77_PBO\data\Veteran_Trooper_LowerBody",
 		};
 	};
 	class 77th_Veteran_Officer_2_Uniform: SWLB_clone_base_P2
@@ -985,7 +985,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Veteran_Sergeant_UpperBody",
-			"AUX77_PBO\data\Veteran_Sergeant_LowerBody",
+			"AUX77_PBO\data\Veteran_Trooper_LowerBody",
 		};
 	};
 	class 77th_Veteran_Corporal_Uniform: SWLB_clone_base_P2
@@ -1001,7 +1001,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Veteran_Corporal_UpperBody",
-			"AUX77_PBO\data\Veteran_Corporal_LowerBody",
+			"AUX77_PBO\data\Veteran_Trooper_LowerBody",
 		};
 	};
 	class 77th_Veteran_Specialist_Uniform: SWLB_clone_base_P2
@@ -1017,7 +1017,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"AUX77_PBO\data\Veteran_Specialist_UpperBody",
-			"AUX77_PBO\data\Veteran_Specialist_LowerBody",
+			"AUX77_PBO\data\Veteran_Trooper_LowerBody",
 		};
 	};
 	class 77th_Veteran_Trooper_Uniform: SWLB_clone_base_P2
